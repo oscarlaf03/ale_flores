@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="main-content">
+    <h1><%= @arranjo.name  %></h1>
+    <% if user_signed_in? && current_user.site_owner %>
+      <%= render 'shared/owner_actions', arranjo: @arranjo  %>
+    <% end  %>
+    <p><%= @arranjo.description %></p>
+    <%= cl_image_tag @arranjo.photo, height: 500, width: 400, crop: :fill%>
+    <p>Disponível por assinatura no plano: <%= @arranjo.available_membership  %></p>
+    <button class='btn btn-primary bnt-lg'>Assinar já</button>
+
+  </div>
+
+</div>

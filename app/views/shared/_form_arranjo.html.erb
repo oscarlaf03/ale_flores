@@ -1,0 +1,8 @@
+<%= simple_form_for(arranjo) do |f| %>
+  <%= f.input :name, label: 'Nome do arranjo', placeholder: 'Seja criativo' %>
+  <%= f.input :description, label: 'Descrição do arranjo', placeholder: 'O que faz deste um arranjo especial?' %>
+  <%= f.input :composition, label: 'Composição', placeholder: 'Que tipo de flores tem aquí?' %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.submit class: 'btn btn-primary btn-lg'%>
+<% end %>

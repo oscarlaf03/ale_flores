@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Conheça nossos arranjos</h1>
+  <div class="row">
+    <% @arranjos.each do |arranjo| %>
+      <%= render 'shared/card_arranjo', arranjo: arranjo %>
+    <% end %>
+  </div>
+
+</div>

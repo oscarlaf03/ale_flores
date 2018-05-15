@@ -1,0 +1,4 @@
+<div class="btn-group">
+  <%= link_to 'Editar', edit_arranjo_path(arranjo), class: 'btn btn-success btn-md'  %>
+  <%= link_to 'Excluir', arranjo_path(arranjo), method: :delete, data: {confirm: "esta acão não pode ser desfeita"}, class: 'btn btn-danger btn-md'  %>
+</div>
