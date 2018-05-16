@@ -1,7 +1,7 @@
 class ArranjosController < ApplicationController
   before_action :set_arranjo, only:[:edit, :update, :show, :destroy]
   def index
-    @arranjos = policy_scope(Arranjo).order(created_at: :desc)
+    @arranjos = policy_scope(Arranjo).order('created_at DESC')
   end
 
   def new
